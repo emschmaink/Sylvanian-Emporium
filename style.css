@@ -44,6 +44,14 @@ a:hover{text-decoration:underline}
 .main-nav a{font:800 clamp(16px,2.2vw,24px)/1 Nunito,system-ui,sans-serif;color:var(--text);text-decoration:none;}
 .main-nav a:hover{text-decoration:underline}
 
+/* Responsive shrinking for site header */
+@media (max-width: 600px) {
+  .site-header{ max-width: 600px; }
+}
+@media (max-width: 400px) {
+  .site-header{ max-width: 280px; }
+}
+
 /* Index banners */
 .index-banner,
 .index-banner2 {
