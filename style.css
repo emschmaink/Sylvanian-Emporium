@@ -61,7 +61,16 @@ h1,h2,h3{
   letter-spacing:1px;
 }
 
+/* PATTERN */
 
+body{
+  margin:0;
+  background-image:url("assets/pattern.png");
+  background-repeat:repeat;
+  font-family:"Libre Baskerville", serif;
+  color:#6a563f;
+  text-align:center;
+}
 
 /* IMPACT */
 
