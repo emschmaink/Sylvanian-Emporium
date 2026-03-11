@@ -63,18 +63,22 @@ h1,h2,h3{
 
 /* PATTERN */
 
-.page{
-  background:#e6dbc6;
-  max-width:1000px;
+.page{ 
+  padding-bottom:40px;
+  max-width:1300px;
   margin:auto;
   min-height:100vh;
-  padding-bottom:40px;
+
+  background:
+    url("assets/pattern.png") left repeat-y,
+    url("assets/pattern.png") right repeat-y,
+    #e6dbc6;
+
+  background-size:300px auto, 300px auto, auto;
 }
 
 body{
   margin:0;
-  background-image:url("assets/pattern.png");
-  background-repeat:repeat;
   font-family:"Libre Baskerville", serif;
   color:#6a563f;
   text-align:center;
