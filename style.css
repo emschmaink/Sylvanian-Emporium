@@ -8,15 +8,15 @@
 
 body{
   margin:0;
-  background:#e6dbc6;
+  background:var(--cream);
   font-family:"Libre Baskerville", serif;
-  color:#6a563f;
+  color:var(--ink);
+  text-align:center;
 }
 
 h1,h2,h3{
   font-family:"Cormorant Garamond", serif;
 }
-
 
 
 /* HEADER */
@@ -26,7 +26,7 @@ h1,h2,h3{
   align-items:center;
   justify-content:space-between;
   padding:18px 40px;
-  background:#e6dbc6;
+  background:var(--cream);
 }
 
 .header-left,
@@ -44,7 +44,6 @@ h1,h2,h3{
 }
 
 
-
 /* NAV */
 
 .main-nav{
@@ -60,30 +59,35 @@ h1,h2,h3{
   letter-spacing:1px;
 }
 
-/* PATTERN */
 
-.page{ 
-  padding-bottom:40px;
-  max-width:1300px;
+/* PAGE CONTAINER */
+
+.page{
+  max-width:1280px;
   margin:auto;
+  background:var(--cream);
   min-height:100vh;
+  padding-bottom:40px;
 
-  background:
-    url("assets/pattern.png") left repeat-y,
-    url("assets/pattern.png") right repeat-y,
-    #e6dbc6;
+  background-image:
+    url("assets/pattern.png"),
+    url("assets/pattern.png");
 
-  background-size:300px auto, 300px auto, auto;
+  background-position:
+    left top,
+    right top;
+
+  background-repeat:
+    repeat-y,
+    repeat-y;
+
+  background-size:
+    260px auto,
+    260px auto;
 }
 
-body{
-  margin:0;
-  font-family:"Libre Baskerville", serif;
-  color:#6a563f;
-  text-align:center;
-}
 
-/* IMPACT */
+/* IMPACT BANNER */
 
 .impact-banner{
   margin:30px 0;
@@ -93,7 +97,6 @@ body{
   width:420px;
   max-width:90%;
 }
-
 
 
 /* HERO */
@@ -109,7 +112,6 @@ body{
 }
 
 
-
 /* SALE IMAGE */
 
 .sale-card{
@@ -120,7 +122,6 @@ body{
   width:520px;
   max-width:90%;
 }
-
 
 
 /* SHOP BUTTON */
@@ -134,7 +135,6 @@ body{
   text-decoration:none;
   margin-top:20px;
 }
-
 
 
 /* COLLECTIONS */
@@ -160,7 +160,6 @@ body{
 }
 
 
-
 /* FOOTER */
 
 .footer-links{
@@ -178,8 +177,8 @@ body{
   display:block;
   color:var(--ink);
   margin:8px 0;
+  text-decoration:none;
 }
-
 
 
 /* SOCIAL */
