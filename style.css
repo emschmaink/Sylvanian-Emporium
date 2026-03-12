@@ -9,10 +9,23 @@
 body{
   margin:0;
   background-color:#e6dbc6;
-  background-image:url("assets/pattern.png"), url("assets/pattern.png");
-  background-repeat:repeat-y, repeat-y;
-  background-position:left top, right top;
-  background-size:800px auto;
+
+  background-image:
+    url("assets/pattern.png"),
+    url("assets/pattern.png");
+
+  background-position:
+    left top,
+    right top;
+
+  background-repeat:
+    no-repeat,
+    no-repeat;
+
+  background-size:
+    420px 100%,
+    420px 100%;
+
   font-family:"Libre Baskerville", serif;
   color:#6a563f;
   text-align:center;
