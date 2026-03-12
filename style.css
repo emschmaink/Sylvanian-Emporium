@@ -86,13 +86,34 @@ h1,h2,h3{
 /* PAGE CONTAINER */
 
 .page{
-  max-width:1200px;
+  max-width:1500px;
   margin:auto;
   background:var(--cream);
   min-height:100vh;
   padding-bottom:50px;
+  position:relative;
 }
 
+.page::before,
+.page::after{
+  content:"";
+  position:absolute;
+  top:0;
+  bottom:0;
+  width:420px;
+  background-image:url("assets/pattern.png");
+  background-size:contain;
+  background-repeat:repeat-y;
+  z-index:-1;
+}
+
+.page::before{
+  right:100%;
+}
+
+.page::after{
+  left:100%;
+}
 
 /* IMPACT BANNER */
 
