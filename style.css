@@ -8,27 +8,33 @@
 
 body{
   margin:0;
-  background-color:var(--cream);
-
-  background-image:
-    url("assets/pattern.png"),
-    url("assets/pattern.png");
-
-  background-position:
-    left top,
-    right top;
-
-  background-repeat:
-    repeat-y,
-    repeat-y;
-
-  background-size:
-    600px auto,
-    600px auto;
-
+  background:var(--cream);
   font-family:"Libre Baskerville", serif;
   color:var(--ink);
   text-align:center;
+}
+
+/* PLAID SIDE PANELS */
+
+body::before,
+body::after{
+  content:"";
+  position:fixed;
+  top:0;
+  bottom:0;
+  width:360px;
+  background-image:url("assets/pattern.png");
+  background-size:cover;
+  background-repeat:no-repeat;
+  z-index:-1;
+}
+
+body::before{
+  left:0;
+}
+
+body::after{
+  right:0;
 }
 
 h1,h2,h3{
@@ -57,7 +63,7 @@ h1,h2,h3{
 }
 
 .logo img{
-  width:520px;
+  width:600px;
 }
 
 
@@ -80,7 +86,7 @@ h1,h2,h3{
 /* PAGE CONTAINER */
 
 .page{
-  max-width:1500px;
+  max-width:1200px;
   margin:auto;
   background:var(--cream);
   min-height:100vh;
@@ -95,7 +101,7 @@ h1,h2,h3{
 }
 
 .impact-banner img{
-  width:500px;
+  width:600px;
   max-width:90%;
 }
 
