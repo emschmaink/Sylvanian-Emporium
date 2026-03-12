@@ -63,7 +63,7 @@ h1,h2,h3{
 /* PAGE CONTAINER */
 
 .page{
-  max-width:1500px;
+  max-width:1350px;
   margin:auto;
   background:var(--cream);
   min-height:100vh;
@@ -77,9 +77,9 @@ h1,h2,h3{
   position:absolute;
   top:0;
   bottom:0;
-  width:420px;
+  width:520px;
   background-image:url("assets/pattern.png");
-  background-size:contain;
+  background-size:cover;
   background-repeat:repeat-y;
   z-index:-1;
 }
