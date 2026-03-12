@@ -8,9 +8,13 @@
 
 body{
   margin:0;
-  background:var(--cream);
+  background-color:#e6dbc6;
+  background-image:url("assets/pattern.png"), url("assets/pattern.png");
+  background-repeat:repeat-y, repeat-y;
+  background-position:left top, right top;
+  background-size:300px auto;
   font-family:"Libre Baskerville", serif;
-  color:var(--ink);
+  color:#6a563f;
   text-align:center;
 }
 
@@ -68,23 +72,6 @@ h1,h2,h3{
   background:var(--cream);
   min-height:100vh;
   padding-bottom:40px;
-
-  background-image:
-    url("assets/pattern.png"),
-    url("assets/pattern.png");
-
-  background-position:
-    left top,
-    right top;
-
-  background-repeat:
-    repeat-y,
-    repeat-y;
-
-  background-size:
-    260px auto,
-    260px auto;
-}
 
 
 /* IMPACT BANNER */
