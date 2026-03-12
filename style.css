@@ -63,34 +63,21 @@ h1,h2,h3{
 /* PAGE CONTAINER */
 
 .page{
-  max-width:1350px;
+  max-width:1500px;
   margin:auto;
-  background:var(--cream);
   min-height:100vh;
   padding-bottom:50px;
-  position:relative;
+
+  background:
+    url("assets/pattern.png") left top repeat-y,
+    url("assets/pattern.png") right top repeat-y,
+    var(--cream);
+
+  background-size:
+    520px auto,
+    520px auto;
 }
 
-.page::before,
-.page::after{
-  content:"";
-  position:absolute;
-  top:0;
-  bottom:0;
-  width:520px;
-  background-image:url("assets/pattern.png");
-  background-size:cover;
-  background-repeat:repeat-y;
-  z-index:-1;
-}
-
-.page::before{
-  right:100%;
-}
-
-.page::after{
-  left:100%;
-}
 
 /* IMPACT BANNER */
 
