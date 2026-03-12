@@ -14,29 +14,6 @@ body{
   text-align:center;
 }
 
-/* PLAID SIDE PANELS */
-
-body::before,
-body::after{
-  content:"";
-  position:fixed;
-  top:0;
-  bottom:0;
-  width:360px;
-  background-image:url("assets/pattern.png");
-  background-size:cover;
-  background-repeat:no-repeat;
-  z-index:-1;
-}
-
-body::before{
-  left:0;
-}
-
-body::after{
-  right:0;
-}
-
 h1,h2,h3{
   font-family:"Cormorant Garamond", serif;
 }
