@@ -12,7 +12,7 @@ body{
   background-image:url("assets/pattern.png"), url("assets/pattern.png");
   background-repeat:repeat-y, repeat-y;
   background-position:left top, right top;
-  background-size:300px auto;
+  background-size:800px auto;
   font-family:"Libre Baskerville", serif;
   color:#6a563f;
   text-align:center;
