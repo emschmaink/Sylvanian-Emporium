@@ -154,6 +154,34 @@ h1,h2,h3{
   margin-top:10px;
 }
 
+/* CONTACT FORM */
+
+.contact-form{
+  max-width:600px;
+  margin:50px auto;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  text-align:left;
+}
+
+.contact-form input,
+.contact-form textarea{
+  padding:12px;
+  border-radius:10px;
+  border:1px solid rgba(0,0,0,.15);
+  font-family:"Libre Baskerville", serif;
+}
+
+.contact-form button{
+  background:var(--sage);
+  color:white;
+  border:none;
+  padding:14px;
+  border-radius:30px;
+  font-size:16px;
+  cursor:pointer;
+}
 
 /* FOOTER */
 
